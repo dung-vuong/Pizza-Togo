@@ -1,3 +1,7 @@
-
-<h1>Pizza LinLin</h1>
-<a href="{% url 'order' %}">Order Now</a>
+{% extends 'pizza/base.html' %}
+{% block 'body' %}
+    <div class="text-center">
+        {% load static %}
+        <img src="{% static 'profile.jpg' %}" class="img-fluid" alt="Gordon Ramsay's Pizza">
+    </div>
+{% endblock  %}
